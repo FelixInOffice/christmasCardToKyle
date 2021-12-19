@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background-image: url("../images/bg.png");
+    font-family: 'Noto Sans TC', sans-serif;
 }
 
 .bigContainer {
@@ -14,7 +15,6 @@ body {
   display: grid;
   grid-template-rows: fit-content(500px) 1fr fit-content(500px);
   /* gap: 20px; */
-  font-family: 'Noto Sans TC', sans-serif;
   height: 95%;
   padding-left: 10px;
   padding-right: 10px;
@@ -44,6 +44,13 @@ body {
 #byFelix {
   text-align: right;
   align-self: end;
+}
+
+#hitsForFlip {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
@@ -92,7 +99,7 @@ body {
     background-color: #F8EFEA;
     color: black;
     transform: rotateY(180deg);
-    padding: 8px;
+    padding-bottom: 8px;
   }
 
   #snow {
