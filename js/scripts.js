@@ -1,13 +1,26 @@
 let click = 0;
+let flipSound = document.getElementById("flipSound");
+let bgSound = document.getElementById("bgSound");
+bgSound.volume = 0;
 
 function flipTheCard() {
+    playFlipSound();
+    playBgMusic();
     click++;
     if (click % 2 == 1) {
         document.querySelector(".flip-card-inner").style.transform = 'rotateY(-180deg)';
     } else {
         document.querySelector(".flip-card-inner").style.transform = 'rotateY(0deg)';
     }
+}
 
+function playFlipSound() {
+    flipSound.play();
+}
+
+function playBgMusic() {
+    bgSound.play();
+    $(bgSound).animate({ volume: 1.0 }, 10000); // Music fade-in when flip the card
 }
 
 /** Start of snow JS **/

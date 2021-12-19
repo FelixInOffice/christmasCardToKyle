@@ -6,11 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
+    <!-- font family -->
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
     <title>Merry Christmas</title>
 </head>
 
 <body>
     <div id="snow"></div>
+    <audio id="flipSound">
+        <source src="./sounds/Card-flip-sound-effect.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="bgSound">
+        <source src="./sounds/JustinBieber-Christmas-Love.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
     <div class="bigContainer">
         <div class="flip-card">
             <div class="flip-card-inner" onclick="flipTheCard()">
@@ -19,11 +35,28 @@
                 </div>
                 <div class="flip-card-back">
                     <!-- Back Side -->
+                    <div id="cardBackGrid">
+                        <div id="dearKyle">Dear Kyle</div>
+                        <div id="cardContent">
+                            <p>
+                                Merry Christmas! 好開心可以識到你，同你傾偈嘅呢幾日我都好開心，其實你都係我唯一傾得最多嘅人😆。
+                            </p>
+                            <p>
+                                嚟緊實習辛苦你啦，要加油呀🔥！完咗就放假啦，可以帶你去遊車河嚕😎~
+                            </p>
+                            <p>
+                                祝你有個開心嘅假期！<br />🎅🏻 Ho!Ho!Ho!
+                            </p>
+                        </div>
+                        <div id="byFelix">Felix<br />25 December 2021</div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <script src="./js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </body>
 
 </html>

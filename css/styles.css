@@ -10,14 +10,49 @@ body {
     height: 96vh;
 }
 
+#cardBackGrid {
+  display: grid;
+  grid-template-rows: fit-content(500px) 1fr fit-content(500px);
+  /* gap: 20px; */
+  font-family: 'Noto Sans TC', sans-serif;
+  height: 95%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+
+  border: 10px solid transparent;
+
+  border-image-source:url("../images/border.webp");
+  border-image-slice:202 194 208 194;
+  border-image-width:20px 20px 20px 20px;
+  border-image-outset:0px 0px 0px 0px;
+  border-image-repeat:stretch stretch;
+}
+
+#dearKyle {
+  text-align: left;
+}
+
+#cardContent {
+  text-align: left;
+}
+
+#cardContent p {
+  font-size: 1rem;
+}
+
+#byFelix {
+  text-align: right;
+  align-self: end;
+}
+
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
     background-color: transparent;
     width: 80vw;
     height: 50vh;
-    border: 3px solid #f1f1f1;
+    /* border: 3px solid #f1f1f1; */
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
-    /* overflow: hidden; */
     margin: auto;
   }
   
@@ -57,6 +92,7 @@ body {
     background-color: #F8EFEA;
     color: black;
     transform: rotateY(180deg);
+    padding: 8px;
   }
 
   #snow {
